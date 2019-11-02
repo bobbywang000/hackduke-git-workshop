@@ -1,0 +1,105 @@
+Updating Homebrew...
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+gmt@5               grin-wallet         onefetch            tdkjs
+grin                nbdime              prestosql
+==> Updated Formulae
+ammonite-repl                            mdbook
+angular-cli                              mgba
+apache-arrow                             minikube
+apache-arrow-glib                        mm-common
+arangodb                                 mvnvm
+arduino-cli                              mypy
+ask-cli                                  neomutt
+atlantis                                 netlify-cli
+atlassian-cli                            nim
+aws-cdk                                  opa
+balena-cli                               open-babel
+ballerina                                openapi-generator
+bazelisk                                 openvpn
+bettercap                                orc-tools
+bit                                      osquery
+blockhash                                paket
+borgmatic                                phpunit
+bro                                      pmd
+bup                                      ponyc
+cfn-lint                                 pqiv
+cfssl                                    pre-commit
+chafa                                    pspg
+cheat                                    pulumi
+checkstyle                               puzzles
+cimg                                     py2cairo
+cli53                                    py3cairo
+cmatrix                                  python
+composer                                 python-yq
+conan                                    quex
+csvq                                     quickjs
+dasm                                     rabbitmq
+dbhash                                   rdesktop
+dcos-cli                                 re2
+deno                                     redpen
+dmtx-utils                               residualvm
+dnscrypt-proxy                           rke
+docfx                                    rocksdb
+doctl                                    rom-tools
+doitlive                                 rrdtool
+drafter                                  ruby-build
+dvc                                      scummvm
+erlang                                   scummvm-tools
+exploitdb                                serd
+ffmpeg                                   serverless
+ffmpeg@2.8                               sfk
+firebase-cli                             shadowsocks-libev
+flow                                     shairport-sync
+fn                                       shared-mime-info
+frugal                                   simgrid
+gatsby-cli                               sip
+geckodriver                              skopeo
+git-quick-stats                          slowhttptest
+gitlab-runner                            solr
+glooctl                                  spatialindex
+gmt                                      sphinx-doc
+gnunet                                   spigot
+go                                       sqldiff
+go@1.12                                  sqlite
+godep                                    sqlite-analyzer
+goreleaser                               sqlmap
+gradle                                   stgit
+helmfile                                 suricata
+helmsman                                 svgo
+hfstospell                               swiftformat
+hugo                                     sysbench
+imagemagick                              terraform
+influxdb                                 terragrunt
+ipbt                                     tfenv
+istioctl                                 traefik
+jenkins                                  traefik@1
+jenkins-lts                              urweb
+jfrog-cli-go                             vagrant-completion
+just                                     vapoursynth-imwri
+kafka                                    vim@7.4
+kubebuilder                              vips
+kubeprod                                 watchexec
+kubernetes-helm                          x265
+kubeseal                                 xcodegen
+libcouchbase                             xorriso
+libheif                                  xtensor
+libmaxminddb                             youtube-dl
+libpeas                                  zabbix
+libphonenumber                           zbar
+libvoikko                                zita-convolver
+llvm                                     zola
+llvm@7                                   zrepl
+lmod                                     zsh-history-substring-search
+macvim
+==> Renamed Formulae
+presto -> prestodb
+==> Deleted Formulae
+bdsup2sub                  dcal                       gmt@4
+
+==> Downloading https://homebrew.bintray.com/bottles/ncdu-1.14.1.catalina.bottle
+######################################################################## 100.0%
+==> Pouring ncdu-1.14.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/ncdu/1.14.1: 7 files, 99.8KB
