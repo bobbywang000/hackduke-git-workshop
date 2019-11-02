@@ -92,14 +92,11 @@ We may not get through all of these!
 - Run `git checkout rebase-example-<A_or_B>`. Type in `git log` and notice how there's a couple of commits. 
 - Type in `git rebase -i HEAD~5`. You should see something like the following pop up in vim:
 ```
-pick a1b2c3 this is a commit
-pick a1b2c3 this is a commit
-pick a1b2c3 this is a commit
-pick a1b2c3 this is a commit
-pick a1b2c3 this is a commit
-pick a1b2c3 this is a commit
+pick afbc457 please work lol
+pick 7d63553 fixup: bugfix
+pick 79329e3 add a comment
 
-# Rebase 6b5c2d1..8cda1ed onto 6b5c2d1 (5 commands)
+# Rebase 4b42e7d..79329e3 onto 4b42e7d (3 commands)
 #
 # Commands:
 # p, pick <commit> = use commit
@@ -125,15 +122,36 @@ pick a1b2c3 this is a commit
 #
 # Note that empty commits are commented out
 ```
-- I personally find `pick`, `reword`, `squash`, and `fixup` to be the most useful. Using those 4 commands, collapse the messages into the following.
-
+- I personally find `pick`, `reword`, `squash`, and `fixup` to be the most useful. Using those 4 commands, collapse the messages into the following. Choose a better commit message name for "please work lol."
 ```
-
+pick 79329e3 add a comment
+reword afbc457 please work lol
+fixup 7d63553 fixup: bugfix
 ```
-
 - If you're not familiar with vim, the above might be very hard. One workaround is to copy the text into your favorite text editor (`cmd + c` works in a terminal), edit the commits, delete the existing lines (`dd` in editor mode), paste the edited lines back into vim (`cmd + v` works in a terminal too), and save and quit (`:wq` in editor mode).
 - If you rebase your local after already pushing, you'll need to force push after rebasing. Because interactive rebasing is so useful, this is another reason to always **work in separate branches** so that you can safely use interactive rebase.
 - Interactive rebasing also allows you to quickly make some not-great commit messages at first and then edit your Git history into something more easily understandable.
+- After rebasing, you should see the following after typing in git log:
+
+```
+commit c0335d03589f09e707d51c87b14db173bdc86264 (HEAD -> rebase-example-A)
+Author: Bobby Wang <bcw22@duke.edu>
+Date:   Sat Nov 2 12:30:48 2019 -0700
+
+    <your_better_message>
+
+commit 3a726e83a72a83426d7f16d36103420b1e5bcba7
+Author: Bobby Wang <bcw22@duke.edu>
+Date:   Sat Nov 2 12:31:51 2019 -0700
+
+    add a comment
+
+commit 4b42e7db57120171ba4a31417b165d4fff2e8fcb (origin/master, origin/HEAD, master)
+Author: Bobby Wang <bcw22@duke.edu>
+Date:   Sat Nov 2 12:28:30 2019 -0700
+
+    add test.py
+```
 
 ### Resetting
 
