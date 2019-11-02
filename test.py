@@ -1,2 +1,3 @@
 def foo(arr):
-	pass
+	for elm in foo:
+		puts elm
