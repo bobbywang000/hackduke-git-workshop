@@ -1,0 +1,2 @@
+def foo(arr):
+	pass
